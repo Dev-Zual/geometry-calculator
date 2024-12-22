@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geometry calculator genius</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="mx-10">
+    <header></header>
+    <main>
+      <div class="flex gap-7 mt-3">
+        <div class="flex-1 grid grid-cols-3 gap-6">
+          <!--! triangle -->
+          <div class="card bg-base-100 shadow-xl">
+            <figure>
+              <img class="p-5" src="./images/triangle.png" alt="triangle" />
+            </figure>
+            <div class="card-body">
+              <h2 class="!text-center text-2xl">Triangle</h2>
+              <p class="text-center">Area (A) = 0.5 x b x h</p>
+
+              <!-- input group  -->
+              <div class="flex gap-3 items-center mt-5">
+                <label class="form-control w-full max-w-xs">
+                  <input
+                    id="b-input"
+                    type="text"
+                    placeholder="b"
+                    class="input input-bordered w-full max-w-xs"
+                  />
+                </label>
+                <p>cm</p>
+                <label class="form-control w-full max-w-xs">
+                  <input
+                    id="h-input"
+                    type="text"
+                    placeholder="h"
+                    class="input input-bordered w-full max-w-xs"
+                  />
+                </label>
+                <p>cm</p>
+              </div>
+
+              <div class="card-actions mt-4">
+                <button
+                  id="triangle-btn"
+                  class="btn btn-primary w-full font-bold text-white"
+                >
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--! rectangle -->
+          <div class="card bg-base-100 shadow-xl">
+            <figure>
+              <img class="p-5" src="./images/rectangle.png" alt="triangle" />
+            </figure>
+            <div class="card-body">
+              <h2 class="!text-center text-2xl">Rectangle</h2>
+              <p class="text-center">Area (A) = w x I</p>
+
+              <!-- input group  -->
+              <div class="flex gap-3 items-center mt-5">
+                <label class="form-control w-full max-w-xs">
+                  <input
+                    type="text"
+                    placeholder="w"
+                    class="input input-bordered w-full max-w-xs"
+                  />
+                </label>
+                <p>cm</p>
+                <label class="form-control w-full max-w-xs">
+                  <input
+                    type="text"
+                    placeholder="I"
+                    class="input input-bordered w-full max-w-xs"
+                  />
+                </label>
+                <p>cm</p>
+              </div>
+
+              <div class="card-actions mt-4">
+                <button class="btn btn-primary w-full font-bold text-white">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--! Parallelogram -->
+          <div class="card bg-base-100 shadow-xl">
+            <figure>
+              <img
+                class="p-5"
+                src="./images/parallelogram.png"
+                alt="triangle"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="!text-center text-2xl">Parallelogram</h2>
+              <p class="text-center">Area (A) = b x h</p>
+              <p class="text-center">b = 10 cm, h=12cm</p>
+
+              <!-- input group  -->
+              <div class="flex gap-3 items-center mt-5">
+                <label class="form-control w-full max-w-xs">
+                  <input
+                    type="text"
+                    placeholder="w"
+                    class="input input-bordered w-full max-w-xs"
+                  />
+                </label>
+                <p>cm</p>
+                <label class="form-control w-full max-w-xs">
+                  <input
+                    type="text"
+                    placeholder="I"
+                    class="input input-bordered w-full max-w-xs"
+                  />
+                </label>
+                <p>cm</p>
+              </div>
+
+              <div class="card-actions mt-4">
+                <button class="btn btn-primary w-full font-bold text-white">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--! Rhombus -->
+          <div class="card bg-base-100 shadow-xl">
+            <figure>
+              <img class="p-5" src="./images/rhombus.png" alt="triangle" />
+            </figure>
+            <div class="card-body">
+              <h2 class="!text-center text-2xl">Rhombus</h2>
+              <p class="text-center">
+                Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub>
+              </p>
+
+              <!-- input group  -->
+              <div class="flex gap-3 items-center mt-5">
+                <label class="form-control w-full max-w-xs">
+                  <input
+                    type="text"
+                    placeholder="w"
+                    class="input input-bordered w-full max-w-xs"
+                  />
+                </label>
+                <p>cm</p>
+                <label class="form-control w-full max-w-xs">
+                  <input
+                    type="text"
+                    placeholder="I"
+                    class="input input-bordered w-full max-w-xs"
+                  />
+                </label>
+                <p>cm</p>
+              </div>
+
+              <div class="card-actions mt-4">
+                <button class="btn btn-primary w-full font-bold text-white">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--! Pentagon -->
+          <div class="card bg-base-100 shadow-xl">
+            <figure>
+              <img class="p-5" src="./images/pentagon.png" alt="triangle" />
+            </figure>
+            <div class="card-body">
+              <h2 class="!text-center text-2xl">Pentagon</h2>
+              <p class="text-center">Area (A) = 0.5 x p x b</p>
+
+              <!-- input group  -->
+              <div class="flex gap-3 items-center mt-5">
+                <label class="form-control w-full max-w-xs">
+                  <input
+                    type="text"
+                    placeholder="w"
+                    class="input input-bordered w-full max-w-xs"
+                  />
+                </label>
+                <p>cm</p>
+                <label class="form-control w-full max-w-xs">
+                  <input
+                    type="text"
+                    placeholder="I"
+                    class="input input-bordered w-full max-w-xs"
+                  />
+                </label>
+                <p>cm</p>
+              </div>
+
+              <div class="card-actions mt-4">
+                <button class="btn btn-primary w-full font-bold text-white">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--! Ellipse -->
+          <div class="card bg-base-100 shadow-xl">
+            <figure>
+              <img class="p-5" src="./images/ellipse.png" alt="triangle" />
+            </figure>
+            <div class="card-body">
+              <h2 class="!text-center text-2xl">Ellipse</h2>
+              <p class="text-center">Area (A) = &pi;ab</p>
+
+              <!-- input group  -->
+              <div class="flex gap-3 items-center mt-5">
+                <label class="form-control w-full max-w-xs">
+                  <input
+                    type="text"
+                    placeholder="w"
+                    class="input input-bordered w-full max-w-xs"
+                  />
+                </label>
+                <p>cm</p>
+                <label class="form-control w-full max-w-xs">
+                  <input
+                    type="text"
+                    placeholder="I"
+                    class="input input-bordered w-full max-w-xs"
+                  />
+                </label>
+                <p>cm</p>
+              </div>
+
+              <div class="card-actions mt-4">
+                <button class="btn btn-primary w-full font-bold text-white">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          id="result-container"
+          class="w-96 border border-gray-700 rounded-md p-2"
+        >
+          <h2 class="text-2xl text-center underline mb-9">Area Calculation</h2>
+        </div>
+      </div>
+    </main>
+    <script src="./js/calculate.js"></script>
+  </body>
+</html>
